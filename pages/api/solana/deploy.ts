@@ -32,6 +32,7 @@ export default async function deploy(
     }
 
     res.status(200).json(true);
+    
   } catch (error) {
     let errorMessage = error instanceof Error ? error.message : 'Unknown Error';
     res.status(500).json(errorMessage);
